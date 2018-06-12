@@ -125,4 +125,10 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    public function actionHello()
+    {
+        $name ='yii';
+        return $this->render("hello",array('name'=>$name));
+    }
 }
